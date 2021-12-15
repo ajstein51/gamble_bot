@@ -19,7 +19,7 @@ def start_db():
 
 def make_db():
     if dbcon is not None:
-        dbcon.execute("""CREATE TABLE IF NOT EXISTS gamble_db (user int, bankmoney int, handmoney int)""")
+        dbcon.execute("""CREATE TABLE IF NOT EXISTS gamble_db (user int, bankmoney int, handmoney int, inventory text)""")
     else:
         print("error in dbcon")
 # end of func
